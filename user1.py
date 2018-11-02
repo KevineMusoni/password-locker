@@ -21,12 +21,12 @@ def display_users(cls):
 
     class Credentials:
         credential_list =[]
-# def check_user_exist(cls,user_name,password):
+def validation(cls,user_name,password):
     
-#     for user in User.detailList:
-#       if user.user_name == user_name and user.password == password:
-#         return True
-#       return False
+    for user in User.detailList:
+      if user.user_name == user_name and user.password == password:
+        return True
+      return False
 
   
 # def save_account(self):
