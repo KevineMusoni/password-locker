@@ -15,12 +15,12 @@ def __init__(self, user_name, password):
 def save_credentials(self):
     User.detailList.append(self)
 @classmethod
-# def display_users(cls):
-#     return cls.detailList
+def display_users(cls):
+    return cls.detailList
 
 
-#     class Credentials:
-#         credential_list =[]
+    class Credentials:
+        credential_list =[]
 # def check_user_exist(cls,user_name,password):
     
 #     for user in User.detailList:
