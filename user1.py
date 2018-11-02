@@ -43,9 +43,9 @@ def delete_account(self):
 # #   def generate_password
 
 
-# def display_account(cls):
+def display_account(cls):
     
-#     return cls.credential_list
+    return cls.credential_list
   
 
 
