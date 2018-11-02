@@ -33,11 +33,11 @@ def save_account(self):
     
     Credentials.credential_list.append(self)
 
-# def delete_account(self):
+def delete_account(self):
     
-#     Credentials.credential_list.remove(self)
+    Credentials.credential_list.remove(self)
 
-# @classmethod
+@classmethod
 
 
 # #   def generate_password
