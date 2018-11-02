@@ -29,9 +29,9 @@ def validation(cls,user_name,password):
       return False
 
   
-# def save_account(self):
+def save_account(self):
     
-#     Credentials.credential_list.append(self)
+    Credentials.credential_list.append(self)
 
 # def delete_account(self):
     
