@@ -1,9 +1,9 @@
-import string,random
+import string,random,getpass
 # import user.py
 
 class User:
     field =input("Enter Username:\n")
-    field = input("Enter Password:\n")
+    field = field = getpass.getpass()
     detailList=field
     print(field)
   detailList = []

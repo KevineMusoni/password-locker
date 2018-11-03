@@ -1,7 +1,7 @@
+import getpass
 def passwordRequest():
-    field = input("Enter Password:\n")
+    field = getpass.getpass()
     password=field
-    print(field)
     if field==password:
         return True
         return False
