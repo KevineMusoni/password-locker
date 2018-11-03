@@ -34,6 +34,7 @@ if error == 1:
 	sleep(1)
     # sleep() pauses the program.
 	quit()
+    #quit method exits a function/statement
 else:
 	pass
 
