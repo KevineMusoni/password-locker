@@ -1,11 +1,8 @@
+# password functions
 import string,random,getpass
 # import user.py
 
 class User:
-    field =input("Enter Username:\n")
-    field = field = getpass.getpass()
-    detailList=field
-    print(field)
   detailList = []
 def __init__(self, user_name, password):
     self.user_name = user_name
@@ -43,13 +40,14 @@ def displayAccount(cls):
     
     return cls.credential_list
   
+  # generating password(safe & strong :)
 def generatePassword(num):
     password=''
 
     for x in range(num):
       y = random.randint(0,50)
       password += string.printable[x]
-
+      #string.printable[] is a combination of digits, ascii_letters, punctuation, and whitespace for password input.
     return password
 print (generatePassword)
 

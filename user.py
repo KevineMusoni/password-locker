@@ -1,3 +1,4 @@
+# learning how to hide user password
 import getpass
 def passwordRequest():
     field = getpass.getpass()
