@@ -8,21 +8,23 @@ error = 0
 running = True
 
 username = open("username.txt", "r")
+# look for the username.txt file and read from it
 usernameRead = username.read()
 username.close()
 
 password = open("password.txt", "r")
+# look for the password.txt file and read from it
 passwordRead = password.read()
 password.close()
 
-usr_user = input("Username: ")
-if usr_user == usernameRead:
+user_name = input("Username: ")
+if user_name == usernameRead:
 	pass
 else:
 	error = 1
 
-usr_pass = input("Password: ")
-if usr_pass == passwordRead:
+user_password = input("Password: ")
+if user_password == passwordRead:
 	pass
 else:
 	error = 1
@@ -37,22 +39,22 @@ else:
 
 while running:
 	print("Type c to change username and password And q to quit.")
-	input = input()
+	u_input = input()
 
-	if cmd == "c":
-		print("Fill in the following.")
-		new_usr = input("New Username: ")
-		newusr = open("username.txt", "w")
-		newusr.write(new_usr)
-		newusr.close()
+	if u_input == "c":
+		new_user = input("New Username: ")
+		newuser = open("username.txt", "w")
+		newuser.write(new_user)
+		newuser.close()
 
-		new_psw = input("New Password: ")
-		newpsw = open("password.txt", "w")
-		newpsw.write(new_psw)
-		newpsw.close()
+		new_password = input("New Password: ")
+		new_password = open("password.txt", "w")
+		new_password.write(new_password)
+		new_password.close()
 
-	if cmd == "q":
+	if u_input == "q":
 		sleep(1)
 		running = False
+
 
         
