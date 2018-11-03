@@ -1,5 +1,4 @@
-import random
-import string
+import string,random
 # import user.py
 
 class User:
@@ -12,10 +11,10 @@ def __init__(self, user_name, password):
     self.user_name = user_name
     self.password = password
 @classmethod
-def save_credentials(self):
+def saveCredentials(self):
     User.detailList.append(self)
 @classmethod
-def display_users(cls):
+def displayUsers(cls):
     return cls.detailList
 
 
@@ -29,23 +28,30 @@ def validation(cls,user_name,password):
       return False
 
   
-def save_account(self):
+def saveAccount(self):
     
     Credentials.credential_list.append(self)
 
-def delete_account(self):
+def deleteAccount(self):
     
     Credentials.credential_list.remove(self)
 
 @classmethod
 
 
-# #   def generate_password
-
-
-def display_account(cls):
+def displayAccount(cls):
     
     return cls.credential_list
   
+def generatePassword(num):
+    password=''
 
+    for x in range(num):
+      y = random.randint(0,50)
+      password += string.printable[x]
+
+    return password
+print (generatePassword)
+
+    
 
