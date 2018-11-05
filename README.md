@@ -2,13 +2,13 @@
 ### {This is an application that will allow users to generate and store passwords for various accounts.},5/11/2018
 ### By **{Kevine Musoni}**
 ## Description
-{This web page will enable the user to Register and take a JavaScript quiz that will display the user's marks }
+{This application will enable users to login to their accounts, change user account details and generate random passwords for safe and strong passwords}
 ## Setup/Installation Requirements 
-github link : https://github.com/KevineMusoni/JavaScript-Quiz.git
+github link :git@github.com:KevineMusoni/password-locker.git 
 ## step-by step guide
-* Register for the quiz 
-* click submit
-* start the quiz
+* Enter user details
+* choose whether you want to change account details or exit application
+* Delete account option
 * for more details view contact details
 ## Behavior Driven Development
 | input(Questions) |      example  | output        |
