@@ -9,7 +9,7 @@ github link :git@github.com:KevineMusoni/password-locker.git
 * Enter user details
 * choose whether you want to change account details or exit application
 * Delete account option
-* for more details view contact details
+* Save details option 
 ## Behavior Driven Development
 | input(Questions) |      example  | output        |
 |---------------   |:-------------:|------:        |
