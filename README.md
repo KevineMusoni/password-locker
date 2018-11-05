@@ -1,4 +1,4 @@
-# Password Locker
+# Password Locker Application
 ### {This is an application that will allow users to generate and store passwords for various accounts.},5/11/2018
 ### By **{Kevine Musoni}**
 ## Description
@@ -15,7 +15,7 @@ github link :git@github.com:KevineMusoni/password-locker.git
 |---------------   |:-------------:                     |------:        |
 | Login            | username: kevine, password:456     |  successfully logged in  |
 | quit             |    q    |  exit terminal    |
-| generate password         |         |  ofX1234    |
+| generate password         |    option     |  ofX1234    |
 ## Technologies Used
 {Python3.6}
 ## Support and contact details
