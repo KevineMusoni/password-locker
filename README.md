@@ -1,4 +1,4 @@
-# password-locker
+# Password Locker
 ### {This is an application that will allow users to generate and store passwords for various accounts.},5/11/2018
 ### By **{Kevine Musoni}**
 ## Description
