@@ -11,12 +11,11 @@ github link :git@github.com:KevineMusoni/password-locker.git
 * Delete account option
 * Save details option 
 ## Behavior Driven Development
-| input(Questions) |      example  | output        |
-|---------------   |:-------------:|------:        |
-| Choose          |  A, B, C       |  0,1,2,3,4    |
-| choose          |    A, B, C     |  0,1,2,3,4    |
-| choose          |   A,B,C        |  0,1,2,3,4    |
-| choose          |   A,B,C        |  0,1,2,3,4    |
+| input(Questions) |      example                       | output        |
+|---------------   |:-------------:                     |------:        |
+| Login            | username: kevine, password:456     |  successfully logged in  |
+| quit             |    q    |  exit terminal    |
+| generate password         |         |  ofX1234    |
 ## Technologies Used
 {Python3.6}
 ## Support and contact details
