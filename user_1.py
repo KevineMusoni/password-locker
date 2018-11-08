@@ -1,6 +1,6 @@
 import random
 import string
-
+from time import *
 # user class
 
 class User:

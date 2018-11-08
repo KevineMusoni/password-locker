@@ -21,9 +21,9 @@ def createUser(user_name, password):
   return new_user
 
 def saveUserDetails(user):
-  user.user_save()
+  user.saveUser()
 def displayUsers():
-   return User.display_users()
+   return User.displayUsers()
 
 def loginUser(user_name,password):
   validation = Credentials.validation(user_name,password)
@@ -49,42 +49,40 @@ def generatePassword():
 def main():
   print("Welcome to Password Locker!")
   while True:
-    cmd_i_ = input("Type create to create a new user account, and q to quit")
-    
-if cmd_i == "q":
+      cmd_i = input("Type create to create a new user account,login for an existing account and q to quit  ->") 
+      if cmd_i == "q":
         print("Thank you for for using password locker! ")
+    #   sleep(1)
+	#   running = False
 
-elif cmd_i == "create":
-        print("Sign Up")
+      elif cmd_i == "create":
+        print("Sign Up...")
         user_name = input("User_name: ")
+        print(" use a minimum of 10 characters")
         password = input("Password: ")
-        saveUserDetails(create_user(user_name,password))
+        saveUserDetails(createUser(user_name,password))
         print('\n')
         
         print(f"succesfully created...")
         
-elif cmd_i == "show":
+      elif cmd_i == "show":
         if displayUsers():
             print("Below is the list of users:")
             print('\n')
-            for user in displayusers():
+            for user in displayUsers():
                 print(f"{user.user_name}")
                 print('\n')
         else:
             print("data not found")
                 
         
-elif cmd_i == "login":
+      elif cmd_i == "login":
         print("Enter your User name and your Password to log in:")
         user_name = input("User name: ")
         password = input("password: ")
-        log_in = login_user(user_name,password)
+        log_in = loginUser(user_name,password)
         if log_in == True:
-<<<<<<< HEAD
             print("Welcome to Passsword Locker!")
-=======
-            print(f"Welcome to Passsword Locker!")
->>>>>>> 3fbf9a992f5bd482a5992f1b360586c34ff11c57
             while True:
                 cmd_i = input("Type create to create an account show to display the list of your accounts, q to quit \n")
                 if cmd_i == "create":
@@ -103,13 +101,13 @@ elif cmd_i == "login":
                             print("invalid input...")
                             break
                     save_credential(create_credential(account_name,account_username,account_password))
-                    print({account_name}{account_username} {account_password})
+                    print(f"New account: \n Account:{account_name}\n User Name:{account_username} \n Password: {account_password}")
     
                 elif cmd_i == "show":
                     if displayAccounts():
                         print("List:")
                         for account in displayAccounts():
-                            print({account.account_name}{account_username}{account_password})
+                            print(f" Site:{account.account_name} \n User Name:{account_username}\n Password:{account_password}")
                     else:
                         print("not found...")
                         
