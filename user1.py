@@ -15,7 +15,7 @@ def displayUsers(cls):
     return cls.detailList
 
 
-    class Credentials:
+class Credentials:
         credential_list =[]
 def validation(cls,user_name,password):
     

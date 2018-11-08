@@ -1,5 +1,4 @@
 # saving password in an external text file and changing password  
-# use of if statements only no functions
 from time import *
 import random
 import string
@@ -39,23 +38,23 @@ else:
 	pass
 
 while running:
-	print("Type c to change username and password And q to quit.")
-	u_input = input()
+	print("Type c to change username and password, and q to quit")
+	cmd = input("-> ")
 
-	if u_input == "c":
-		new_user = input("New Username: ")
-		newuser = open("username.txt", "w")
-		newuser.write(new_user)
-		newuser.close()
+	if cmd == "c":
+		print("Fill in the form:")
+		new_usr = input("New Username: ")
+		newusr = open("username.txt", "w")
+		newusr.write(new_usr)
+		newusr.close()
 
-		new_password = input("New Password: ")
-		new_password = open("password.txt", "w")
-		new_password.write(new_password)
-		new_password.close()
+		new_psw = input("New Password: ")
+		newpsw = open("password.txt", "w")
+		newpsw.write(new_psw)
+		newpsw.close()
 
-	if u_input == "q":
+	if cmd == "q":
 		sleep(1)
 		running = False
-
 
         
