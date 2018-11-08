@@ -11,11 +11,13 @@ github link :git@github.com:KevineMusoni/password-locker.git
 * Delete account option
 * Save details option 
 ## Behavior Driven Development
-| input(Questions) |      example                       | output        |
-|---------------   |:-------------:                     |------:        |
-| Login            | username: kevine, password:456     |  successfully logged in  |
-| quit             |    q    |  exit terminal    |
-| generate password         |    option     |  ofX1234    |
+| input(Questions)  | output        |
+|---------------     |-------------:|
+| login (username and password)  |  successfully logged in  |
+| create (username and password)  |  successfully created |
+| q    | Thank you for for using password locker!    |
+| show  | shows lists of accounts created   |
+| generate password      |  ofX1234    |
 ## Technologies Used
 {Python3.6}
 ## Support and contact details
