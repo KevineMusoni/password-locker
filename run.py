@@ -78,16 +78,16 @@ elif cmd_i == "login":
         print("Enter your User name and your Password to log in:")
         user_name = input("User name: ")
         password = input("password: ")
-        sign_in = login_user(user_name,password)
-        if sign_in == True:
-            print(f"Welcome to Passsword Locker!")
+        log_in = login_user(user_name,password)
+        if log_in == True:
+            print("Welcome to Passsword Locker!")
             while True:
                 cmd_i = input("Type create to create an account show to display the list of your accounts, q to quit \n")
                 if cmd_i == "create":
                     print("Create new account")
-                    account_name = input("name: ")
-                    account_username = input("Site Name: ")
-                    password_option = input("Please choose between: (existing password) or (new password) \n").strip()
+                    account_name = input("Username: ")
+                    account_username = input("Account Name: ")
+                    password_option = input("choose: (existing password) or (new password) \n").strip()
                     while True:
                         if password_option == "existing password":
                             account_password = input("password: ")
