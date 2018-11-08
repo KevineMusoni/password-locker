@@ -90,24 +90,24 @@ elif cmd_i == "login":
                     password_option = input("Please choose between: (existing password) or (new password) \n").strip()
                     while True:
                         if password_option == "existing password":
-                            account_password = input("Enter your password: (minimum 8 characters): ")
+                            account_password = input("password: ")
                             break
                         elif password_option == "new password":
                             account_password = generatePassword()
                             break
                         else:
-                            print("Invalid!")
+                            print("invalid input...")
                             break
                     save_credential(create_credential(account_name,account_username,account_password))
-                    print(f"New created account: \n Account:{account_name}\n User Name:{account_username} \n Password: {account_password}")
+                    print({account_name}{account_username} {account_password})
     
                 elif cmd_i == "show":
                     if displayAccounts():
                         print("List:")
                         for account in displayAccounts():
-                            print(f" Site:{account.account_name} \n User Name:{account_username}\n Password:{account_password}")
+                            print({account.account_name}{account_username}{account_password})
                     else:
-                        print("Sorry,......you dont have any accounts yet")
+                        print("not found...")
                         
                 elif cmd_i == "q":
                     print("Thank you for for using password locker! ")
