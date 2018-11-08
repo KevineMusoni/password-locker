@@ -80,7 +80,11 @@ elif cmd_i == "login":
         password = input("password: ")
         log_in = login_user(user_name,password)
         if log_in == True:
+<<<<<<< HEAD
             print("Welcome to Passsword Locker!")
+=======
+            print(f"Welcome to Passsword Locker!")
+>>>>>>> 3fbf9a992f5bd482a5992f1b360586c34ff11c57
             while True:
                 cmd_i = input("Type create to create an account show to display the list of your accounts, q to quit \n")
                 if cmd_i == "create":
